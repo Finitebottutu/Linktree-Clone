@@ -1,0 +1,140 @@
+
+body{
+    background: black;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;;
+    font-size: 16px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+header {
+  width: 95%;
+  
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(240,240,240);
+}
+.share-button:hover{
+  background-color: rgba(240, 240, 240, 0.888);
+}
+
+.share-button .fa-solid {
+  font-size: 22px;
+  margin-left: 11px;
+  margin-top: 8px;
+  color: rgb(0,0,0);
+}
+
+h1{
+    font-size: 28px;
+    margin-top: 6px;
+}
+
+a{
+    text-decoration: none;
+    line-height: 46px;
+    
+}
+
+p{
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.header img{
+    margin-top: 1px;
+    max-width: 130px;
+    border-radius: 50%;
+}
+.tile{
+    align-items: center;
+}
+  .link{
+    width: 100%;
+    max-width: 750px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 21, 21);
+    box-shadow: 1px 1px 2px 2px rgb(31, 32, 33);
+    padding: 10px 15px 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 24px;
+    border-radius: 35px;
+    transition-duration: .2s;
+  }
+  .link:hover{
+    box-shadow: 2px 2px 2px 2px rgb(31, 31, 31);
+    transform: scale(1.005);
+    background-color: rgb(25, 25, 25);
+  }
+
+  .tile p{
+    font-size: 19px;
+  }
+  .link-share-button {
+    margin: 5px -1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(52,52,52);
+  }
+  .link-share-button:hover{
+    background-color: rgb(43, 42, 42);
+  }
+  
+  .link-share-button .fa-solid {
+    font-size: 24px;
+    margin: 1px 10px;
+  }
+  
+
+  .icon-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin:1px -1px
+  }
+ 
+
+  @media only screen and (max-width:600px){
+     .tile{
+        margin-left: 20px;
+        margin-right: 20px;
+     }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
