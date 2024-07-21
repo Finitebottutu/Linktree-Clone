@@ -1,10 +1,10 @@
 # Linktree
 ![Project image](https://github.com/Jomonh/Linktree-Clone/blob/main/images/Preview.png)
 
-Live <a href="https://jomonh.github.io/Linktree-Clone/">here</a>
+## Live <a href="https://jomonh.github.io/Linktree-Clone/">here</a>
 ## Getting started
 
-To get started with this project, run this in your command prompt/Terminal 
+To clone this repository copy and past it in your terminal 
 
 ```bash
   git clone https://github.com/Jomonh/Linktree-Clone.git
