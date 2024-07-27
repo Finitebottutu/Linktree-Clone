@@ -15,7 +15,7 @@ linkButton.forEach(link => {
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Social Links | Jomon Joy";
+        document.title = "Lucif3rHun1";
         $("#favicon").attr("href","images/logo.png");
     }
     else {
