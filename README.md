@@ -1,5 +1,5 @@
 # Linktree
-![Project image](https://github.com/Jomonh/Linktree-Clone/blob/main/images/Preview.png)
+![Project image]()
 
 #### Live <a href="https://jomonh.github.io/Linktree-Clone/">here</a>
 ## Getting started
