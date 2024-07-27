@@ -5,7 +5,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('p5-container');
   noStroke();
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 150; i++) {
     blobs.push(new Blob());
   }
 }
