@@ -17,7 +17,7 @@ function windowResized() {
 function draw() {
   background(0);
   blobs.forEach(function(blob, i) {
-    blobs[i].show().walk().checkPos(mouseX, mouseY);
+    blobs[i].show().walk().followMouse(mouseX, mouseY).checkPos(mouseX, mouseY);
   });
 }
 
@@ -34,6 +34,7 @@ class Blob {
     };
     this.diam = random(2);
     this.positionTo = [random(-width/2, width + width/2), random(-height/2, height + height/2)];
+    this.followSpeed = random(0.01, 0.05); // New property for mouse following speed
   }
   
   show() {
@@ -51,13 +52,21 @@ class Blob {
     return this;
   }
   
+  followMouse(mouseX, mouseY) {
+    let dx = mouseX - this.x;
+    let dy = mouseY - this.y;
+    this.x += dx * this.followSpeed;
+    this.y += dy * this.followSpeed;
+    return this;
+  }
+  
   checkPos(x, y) {
     if ((this.x > width || this.x < 0 || this.y > height || this.y < 0) ||
         (Math.abs(this.x - this.positionTo[0]) < 100) &&
         (Math.abs(this.y - this.positionTo[1]) < 100)) {
       this.x = x || width/2;
       this.y = y || height/2;
-      this.acc = random(10000, 15000);
+      this.acc = random(100, 500); // Reduced for faster movement
       this.diam = random(2);
       this.colors = {
         r: random(100, 255),
@@ -67,5 +76,6 @@ class Blob {
       };
       this.positionTo = [random(-width/2, width + width/2), random(-height/2, height + height/2)];
     }
+    return this;
   }
 }

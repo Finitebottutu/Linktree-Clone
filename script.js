@@ -13,13 +13,13 @@ linkButton.forEach(link => {
 
 
 document.addEventListener('visibilitychange',
-function(){
-    if(document.visibilityState === "visible"){
-        document.title = "Lucif3rHun1";
-        $("#favicon").attr("href","images/logo.png");
+  function () {
+    if (document.visibilityState === "visible") {
+      document.title = "Lucif3rHun1";
+      $("#favicon").attr("href", "images/logo.png");
     }
     else {
-        document.title = "Come Back To Social Links";
-        
+      document.title = "Come Back To Social Links";
+
     }
-});
+  });
